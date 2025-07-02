@@ -97,26 +97,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- FUNGSI UNTUK LINK NAVIGASI AKTIF SAAT SCROLL ---
-    const navLinksList = document.querySelectorAll('nav ul li a');
-    const allSections = document.querySelectorAll('section');
+// --- FUNGSI UNTUK LINK NAVIGASI AKTIF SAAT SCROLL (PERBAIKAN) ---
+const navLinksList = document.querySelectorAll('nav ul li a');
+const allSections = document.querySelectorAll('section[id]'); 
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        allSections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
-            }
-        });
+window.addEventListener('scroll', () => {
+    let currentSectionId = '';
+    const headerOffset = 80; 
 
-        navLinksList.forEach(a => {
-            a.classList.remove('active');
-            if (a.getAttribute('href').includes(current)) {
-                a.classList.add('active');
-            }
-        });
+    allSections.forEach(section => {
+        const sectionTop = section.offsetTop - headerOffset;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+            currentSectionId = section.getAttribute('id');
+        }
     });
+
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
+        currentSectionId = allSections[allSections.length - 1].getAttribute('id');
+    }
+
+    navLinksList.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href').substring(1) === currentSectionId) {
+            a.classList.add('active');
+        }
+    });
+});
 
 });

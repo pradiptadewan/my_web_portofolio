@@ -1,11 +1,11 @@
 /* Konfigurasi Awal & Variabel Warna */
 :root {
-    --primary-color: #6a11cb; /* Ungu */
-    --secondary-color: #2575fc; /* Biru */
-    --background-color: #121212; /* Hitam Gelap */
-    --surface-color: #1e1e1e; /* Hitam Sedikit Lebih Terang */
-    --text-color: #e0e0e0; /* Putih Gading */
-    --text-color-darker: #a0a0a0; /* Abu-abu */
+        --primary-color: #00d4ff; /* Ungu */
+    --secondary-color: #0066cc; /* Biru */
+    --background-color: #0a0a0a; /* Hitam Gelap */
+    --surface-color: #000000; /* Hitam Sedikit Lebih Terang */
+    --text-color: #ffffff; /* Putih Gading */
+    --text-color-darker: #cccccc; /* Abu-abu */
 }
 
 * {
@@ -183,8 +183,9 @@ nav .nav-links li a.active::after {
 
 /* Bagian Tentang Saya */
 #tentang {
-    background-color: var(--surface-color);
+    background-color: var(--background-color);
 }
+
 
 .about-content {
     display: flex;
