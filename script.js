@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedElement = document.getElementById('typed-text');
     if (typedElement) {
         const options = {
-            strings: ['Web Developer', 'UI/UX Enthusiast', 'Problem Solver'],
+            strings: ['Web Developer', 'UI/UX'],
             typeSpeed: 70,
             backSpeed: 50,
             loop: true,
