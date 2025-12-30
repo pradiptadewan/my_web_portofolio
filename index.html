@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Pradipta Dewandaru</title>
     
-    <meta name="description" content="Portofolio web profesional milik Pradipta Dewandaru. Menampilkan proyek, keahlian, dan cara menghubungi saya.">
+    <meta name="description" content="Portofolio web profesional milik Pradipta Dewandaru. Fullstack Developer & UI/UX Enthusiast.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWTKKBGTJV"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-LWTKKBGTJV');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LWTKKBGTJV');
     </script>
 </head>
 <body>
@@ -32,6 +31,7 @@
             <ul class="nav-links">
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li> 
                 <li><a href="#keahlian">Keahlian</a></li>
                 <li><a href="#proyek">Proyek</a></li>
                 <li><a href="#sertifikat">Sertifikat</a></li>
@@ -58,14 +58,35 @@
             <div class="container">
                 <h2>Tentang Saya</h2>
                 <div class="about-content">
-                    <img src="img/pp.jpg" alt="Foto" class="profile-pic">
+                    <img src="img/pp.jpg" alt="Foto Profil Pradipta" class="profile-pic">
                     <p>
                         Selamat datang di portofolio saya.
-
-Nama saya Muhammad Yoanan Pradipta Dewandaru, seorang mahasiswa semester 6 program studi Informatika di Universitas Amikom Yogyakarta dengan fokus dan antusiasme pada dunia pengembangan web.
-
-Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam Python, Django, HTML/CSS, JavaScript, dan PostgreSQL untuk merancang dan membangun solusi digital yang efisien, fungsional, dan skalabel. Sebagai individu yang berdedikasi dan berorientasi pada hasil, saya siap untuk berkontribusi secara nyata dalam proyek-proyek inovatif.
+                        <br><br>
+                        Nama saya Muhammad Yoanan Pradipta Dewandaru, seorang mahasiswa <strong>semester 7</strong> program studi Informatika di Universitas Amikom Yogyakarta dengan fokus dan antusiasme pada dunia pengembangan web.
+                        <br><br>
+                        Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam <strong>Fullstack Development</strong> menggunakan Python (Django), Next.js, Golang, dan PostgreSQL untuk merancang solusi digital yang efisien. Sebagai individu yang berdedikasi, saya siap berkontribusi nyata dalam proyek inovatif.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pengalaman" class="content-section">
+            <div class="container">
+                <h2>Pengalaman Kerja</h2>
+                <div class="project-grid"> 
+                    <div class="project-card experience-highlight">
+                        <div class="exp-content">
+                            <h3>Fullstack Developer Intern</h3>
+                            <h4 class="company-name">PT Indi Teknokreasi</h4>
+                            <p class="date-range">Agustus 2025 - Desember 2025 (5 Bulan)</p>
+                            <p>Bertanggung jawab dalam pengembangan aplikasi skala enterprise (Pemerintahan & BUMN) secara end-to-end.</p>
+                            <ul class="exp-list">
+                                <li>Membangun Backend API berkinerja tinggi menggunakan <strong>Golang</strong>.</li>
+                                <li>Mengembangkan Frontend Dashboard interaktif dengan <strong>Next.js</strong>.</li>
+                                <li>Maintenance dan optimasi sistem CMS berbasis <strong>Django</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,12 +102,14 @@ Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam Pyth
                             <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
                             <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
                             <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+                            <div class="skill-item"><i class="fa-brands fa-golang"></i><span>Go (Golang)</span></div> 
                             <div class="skill-item"><i class="fas fa-database"></i><span>SQL</span></div>
                         </div>
                     </div>
                     <div class="skill-category">
                         <h4>Framework & Library</h4>
                         <div class="skills-list">
+                            <div class="skill-item"><i class="fab fa-react"></i><span>Next.js / React</span></div> 
                             <div class="skill-item"><i class="fab fa-python"></i><span>Django</span></div>
                         </div>
                     </div>
@@ -102,120 +125,162 @@ Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam Pyth
             </div>
         </section>
 
-       <section id="proyek" class="content-section">
+        <section id="proyek" class="content-section">
             <div class="container">
                 <h2>Proyek Unggulan</h2>
 
-                <h3 class="project-category-title">Desain UI/UX</h3>
+                <h3 class="project-category-title">Professional Projects (Internship)</h3>
                 <div class="project-grid">
                     
                     <div class="project-card">
-                        <img src="img/ui1.png" alt="Gambar Proyek UI/UX">
-                        <h3>Desain Aplikasi Barter</h3>
-                        <p>Merancang alur pengguna dan antarmuka untuk aplikasi mobile yaitu melakukan transaksi barter.</p>
-                        <div class="project-tech-stack">
-                            <i class="fab fa-figma" title="Figma"></i>
+                        <div class="img-wrapper">
+                            <img src="img/NDA.jpg" alt="Gamification Dashboard" onerror="this.src='https://via.placeholder.com/400x200?text=Protected+by+NDA'">
+                            <div class="nda-badge"><i class="fas fa-lock"></i> NDA Protected</div>
                         </div>
-                        <div class="project-links">
-                            <a href="https://www.figma.com/design/sRXfqb20SlOYZmPArnbHOU/Aplikasi-Barter?node-id=0-1&t=GIjrdByqR00MCKx3-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="img/ui2.png" alt="Gambar Proyek UI/UX">
-                        <h3>Desain Website Iklan</h3>
-                        <p>Membuat desain website mengenai penyedia jasa iklan sebagai konten kreator dan sebagai pemilik produk atau brand.</p>
-                        <div class="project-tech-stack">
-                            <i class="fab fa-figma" title="Figma"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.figma.com/design/MD08iO4ygwdHKr5IzYpBdb/UTS-DIGITAL-BUSINES?node-id=0-1&t=00KJDmDcJjvgkLoq-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                        <div class="card-body">
+                            <h3>Gamification Dashboard BUMN</h3>
+                            <p>Dashboard untuk memonitor leaderboard dan skor pengguna aplikasi mobile BUMN. Fitur real-time update & reward management.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-react" title="Next.js"></i>
+                                <i class="fab fa-js" title="TypeScript"></i>
+                            </div>
+                            <div class="project-links">
+                                <span class="private-repo"><i class="fas fa-lock"></i> Private Repository</span>
+                            </div>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <img src="img/ui3.png" alt="Gambar Proyek UI/UX">
-                        <h3>Desain Web Rekomendasi Buku</h3>
-                        <p>Membuat desain mengenai sistem rekomendasi buku yang menampilkan detail buku seperti rating, jumlah halaman, dll.</p>
-                        <div class="project-tech-stack">
-                            <i class="fab fa-figma" title="Figma"></i>
+                        <div class="img-wrapper">
+                            <img src="img/NDA.jpg" alt="Sistem SDM" onerror="this.src='https://via.placeholder.com/400x200?text=Protected+by+NDA'">
+                            <div class="nda-badge"><i class="fas fa-lock"></i> NDA Protected</div>
                         </div>
-                        <div class="project-links">
-                            <a href="https://www.figma.com/design/NTcSG6Ro4af2u5Hcar352y/SISTEM_REKOMENDASI_BUKU?node-id=0-1&t=CCEnpPSB5nviABqP-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                        <div class="card-body">
+                            <h3>Sistem Manajemen SDM</h3>
+                            <p>Pengembangan Backend API untuk fitur penilaian mandiri pegawai pemerintahan menggunakan Golang untuk performa tinggi.</p>
+                            <div class="project-tech-stack">
+                                <i class="fa-brands fa-golang" title="Golang"></i>
+                                <i class="fas fa-database" title="PostgreSQL"></i>
+                            </div>
+                            <div class="project-links">
+                                <span class="private-repo"><i class="fas fa-lock"></i> Private Repository</span>
+                            </div>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <img src="img/ui4.png" alt="Gambar Proyek UI/UX">
-                        <h3>Desain Web Pelatihan</h3>
-                        <p>Membuat desain website tentang pelatihan online bagian user dan admin.</p>
-                        <div class="project-tech-stack">
-                            <i class="fab fa-figma" title="Figma"></i>
+                        <div class="img-wrapper">
+                            <img src="img/NDA.jpg" alt="CMS Komoditas" onerror="this.src='https://via.placeholder.com/400x200?text=Protected+by+NDA'">
+                            <div class="nda-badge"><i class="fas fa-lock"></i> NDA Protected</div>
                         </div>
-                        <div class="project-links">
-                            <a href="https://www.figma.com/design/aCKV8TZC0jNhM6m9bUkiGV/PELATIHAN-PPH?node-id=0-1&t=sXajHMZTwdp61fVB-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                        <div class="card-body">
+                            <h3>CMS Komoditas Daerah</h3>
+                            <p>Refactoring dan pengembangan fitur baru pada Content Management System untuk data komoditas pangan.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-python" title="Django"></i>
+                            </div>
+                            <div class="project-links">
+                                <span class="private-repo"><i class="fas fa-lock"></i> Private Repository</span>
+                            </div>
                         </div>
                     </div>
-
                 </div>
 
-                <h3 class="project-category-title">Pengembangan Web</h3>
+                <h3 class="project-category-title">Pengembangan Web (Personal)</h3>
                 <div class="project-grid">
                     <div class="project-card">
-                        <img src="img/web1.png" alt="Gambar Proyek 1">
-                        <h3>Website Rekomendasi Buku</h3>
-                        <p>Membangun website tentang sistem rekomendasi buku yang modern dan responsif menggunakan HTML, CSS, JavaScript dan Django.</p>
-                        <div class="project-tech-stack">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js" title="JavaScript"></i>
-                            <i class="fab fa-python" title="Python"></i>
+                        <img src="img/web1.png" alt="Website Rekomendasi Buku">
+                        <div class="card-body">
+                            <h3>Website Rekomendasi Buku</h3>
+                            <p>Membangun website tentang sistem rekomendasi buku yang modern dan responsif menggunakan HTML, CSS, JavaScript dan Django.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js" title="JavaScript"></i>
+                                <i class="fab fa-python" title="Python"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/pradiptadewan/rekomendasi_buku" target="_blank">Kode <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/pradiptadewan/rekomendasi_buku" target="_blank">Kode <i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
                     <div class="project-card">
-                        <img src="img/web2.png" alt="Gambar Proyek 2">
-                        <h3>Website Pemesanan Homestay</h3>
-                        <p>Website ini merupakan sistem pemesanan homestay dan juga pendaftaran homestay milik user.</p>
-                        <div class="project-tech-stack">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js" title="JavaScript"></i>
-                            <i class="fab fa-python" title="Python"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/pradiptadewan/fp_django_softuni" target="_blank">Kode <i class="fab fa-github"></i></a>
+                        <img src="img/web2.png" alt="Website Pemesanan Homestay">
+                        <div class="card-body">
+                            <h3>Website Pemesanan Homestay</h3>
+                            <p>Website ini merupakan sistem pemesanan homestay dan juga pendaftaran homestay milik user.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js" title="JavaScript"></i>
+                                <i class="fab fa-python" title="Python"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/pradiptadewan/fp_django_softuni" target="_blank">Kode <i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="project-card">
-                        <img src="img/web3.png" alt="Gambar Proyek 3">
-                        <h3>Website Homestay Pribadi</h3>
-                        <p>Membuat website homestay pribadi yang menampilkan detail kamar.</p>
-                        <div class="project-tech-stack">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js" title="JavaScript"></i>
-                            <i class="fab fa-python" title="Python"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/pradiptadewan/portofolio-joglo" target="_blank">Kode <i class="fab fa-github"></i></a>
+                        <img src="img/web3.png" alt="Website Homestay Joglo">
+                        <div class="card-body">
+                            <h3>Website Homestay Pribadi</h3>
+                            <p>Membuat website homestay pribadi yang menampilkan detail kamar dan fasilitas.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js" title="JavaScript"></i>
+                                <i class="fab fa-python" title="Python"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/pradiptadewan/portofolio-joglo" target="_blank">Kode <i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
-                     <div class="project-card">
-                        <img src="img/web4.png" alt="Gambar Proyek 4">
-                        <h3>Website AdsConnect</h3>
-                        <p>Membangun website kolaborasi antara konten kreator dan pemilik brand yang ingin bekerja sama.</p>
-                        <div class="project-tech-stack">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js" title="JavaScript"></i>
-                            <i class="fab fa-python" title="Python"></i>
+                </div>
+
+                <h3 class="project-category-title">Desain UI/UX</h3>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="img/ui1.png" alt="Aplikasi Barter UI">
+                        <div class="card-body">
+                            <h3>Desain Aplikasi Barter</h3>
+                            <p>Merancang alur pengguna dan antarmuka untuk aplikasi mobile transaksi barter.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-figma" title="Figma"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/design/sRXfqb20SlOYZmPArnbHOU/Aplikasi-Barter?node-id=0-1&t=GIjrdByqR00MCKx3-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/pradiptadewan/adsConnect" target="_blank">Kode <i class="fab fa-github"></i></a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="img/ui2.png" alt="Website Iklan UI">
+                        <div class="card-body">
+                            <h3>Desain Website Iklan</h3>
+                            <p>Membuat desain website marketplace jasa iklan untuk konten kreator dan brand.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-figma" title="Figma"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/design/MD08iO4ygwdHKr5IzYpBdb/UTS-DIGITAL-BUSINES?node-id=0-1&t=00KJDmDcJjvgkLoq-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="img/ui3.png" alt="Rekomendasi Buku UI">
+                        <div class="card-body">
+                            <h3>Desain Web Rekomendasi Buku</h3>
+                            <p>Desain sistem rekomendasi buku menampilkan detail buku, rating, dan ulasan.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-figma" title="Figma"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/design/NTcSG6Ro4af2u5Hcar352y/SISTEM_REKOMENDASI_BUKU?node-id=0-1&t=CCEnpPSB5nviABqP-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -243,9 +308,7 @@ Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam Pyth
                             <img src="img/1.png" alt="Sertifikat 11">
                         </div>
                     </div>
-
                     <div class="slide-counter"></div>
-
                     <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
                     <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
                 </div>
@@ -253,23 +316,15 @@ Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam Pyth
                 <h3 class="sertifikat-subjudul">Sertifikat Lainnya</h3>
                 <div class="certificate-grid">
                     <div class="certificate-card">
-                        <img src="img/serDic.png" alt="Sertifikat Lain 1">
+                        <img src="img/sertif.png" alt="Sertifikat Magang">
                         <div class="certificate-content">
-                            <h4>Sertifikasi Dasar Pemograman web </h4>
-                            <p>Diterbitkan oleh: Dicoding</p>
+                            <h4>Magang Berdampak</h4>
+                            <p>Diterbitkan oleh: PT Indi Teknokreasi</p>
                         </div>
                     </div>
 
                     <div class="certificate-card">
-                        <img src="img/serKick.png" alt="Sertifikat Lain 2">
-                        <div class="certificate-content">
-                            <h4>Basic Fullstack Web Dev</h4>
-                            <p>Diterbitkan oleh: Rakamin Academy</p>
-                        </div>
-                    </div>
-
-                    <div class="certificate-card">
-                        <img src="img/serMsib.png" alt="Sertifikat Lain 3">
+                        <img src="img/serMsib.png" alt="Sertifikat MSIB">
                         <div class="certificate-content">
                             <h4>Sertifikat MSIB</h4>
                             <p>Diterbitkan oleh: Kampus Merdeka</p>
@@ -277,12 +332,29 @@ Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam Pyth
                     </div>
 
                     <div class="certificate-card">
-                        <img src="img/serSoft.png" alt="Sertifikat Lain 4">
+                        <img src="img/serSoft.png" alt="Sertifikat SoftUni">
                         <div class="certificate-content">
                             <h4>Sertifikat Software University</h4>
                             <p>Diterbitkan oleh: SoftUni Indonesia</p>
                         </div>
                     </div>
+
+                    <div class="certificate-card">
+                        <img src="img/serDic.png" alt="Sertifikat Dicoding">
+                        <div class="certificate-content">
+                            <h4>Dasar Pemograman Web</h4>
+                            <p>Diterbitkan oleh: Dicoding</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <img src="img/serKick.png" alt="Sertifikat Rakamin">
+                        <div class="certificate-content">
+                            <h4>Basic Fullstack Web Dev</h4>
+                            <p>Diterbitkan oleh: Rakamin Academy</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -292,7 +364,7 @@ Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam Pyth
                 <h2>Kontak</h2>
                 <div class="contact-info">
                     <a href="mailto:pradiptadwn13@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> pradiptadwn13@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/yoanan-pradipta-dewandaru-760044311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/yoanan-pradipta-dewandaru-760044311" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="https://github.com/pradiptadewan" target="_blank" class="contact-item"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
@@ -300,11 +372,10 @@ Di sini Anda akan menemukan bagaimana saya menerapkan keahlian teknis dalam Pyth
     </main>
 
     <footer>
-        <p>&copy; 2025 Pradipta Dewandaru</p>
+        <p>&copy; 2025 Pradipta Dewandaru | Dibuat dengan <i class="fas fa-heart" style="color:var(--primary-color)"></i></p>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
     <script src="script.js"></script>
 </body>
 </html>
