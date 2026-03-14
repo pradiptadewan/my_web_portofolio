@@ -30,6 +30,13 @@ body {
     overflow-x: hidden;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center; /* Memastikan tombol tetap di tengah */
+    gap: 1.2rem; /* Mengatur jarak antar tombol (vertikal & horizontal) */
+    flex-wrap: wrap; /* Memaksa tombol turun ke baris baru dengan rapi di layar kecil */
+}
+
 /* =========================================
    2. UTILITIES & LAYOUT
    ========================================= */
