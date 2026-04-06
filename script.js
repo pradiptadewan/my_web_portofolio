@@ -50,7 +50,7 @@
         }, 2500);
     }
 
-    const revealTargets = document.querySelectorAll('.reveal, .content-section');
+    const revealTargets = document.querySelectorAll('.reveal');
 
     revealTargets.forEach((target) => {
         const delay = target.dataset.delay;
@@ -69,7 +69,7 @@
             });
         },
         {
-            threshold: 0.14,
+            threshold: 0.08,
             rootMargin: '0px 0px -30px 0px'
         }
     );
