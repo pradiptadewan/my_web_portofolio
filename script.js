@@ -1,113 +1,176 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu a');
 
-    /* --- 1. Hamburger Menu Toggle --- */
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const navItems = document.querySelectorAll('.nav-links li a');
+    const closeMenu = () => {
+        if (!navToggle || !navMenu) return;
+        navMenu.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('active');
+    };
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
-            hamburger.classList.toggle('toggle');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('open');
+            navToggle.classList.toggle('active', isOpen);
+            navToggle.setAttribute('aria-expanded', String(isOpen));
         });
 
-        // Tutup menu saat link diklik
-        navItems.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('nav-active');
-                hamburger.classList.remove('toggle');
-            });
+        navLinks.forEach((link) => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                closeMenu();
+            }
         });
     }
 
-    /* --- 2. Typed.js Effect (Efek Ketik) --- */
-    const typedElement = document.getElementById('typed-text');
-    if (typedElement) {
-        new Typed('#typed-text', {
-            strings: ['Web Developer', 'Fullstack Engineer', 'UI/UX Enthusiast'],
-            typeSpeed: 70,
-            backSpeed: 50,
-            backDelay: 1500,
-            loop: true
-        });
+    const roles = [
+        'Aktif Mencari Posisi Fullstack Developer',
+        'Terbuka untuk Posisi Frontend Developer',
+        'Terbuka untuk Posisi Backend Developer',
+        'Siap Berkontribusi untuk Tim Produk'
+    ];
+    const roleText = document.getElementById('role-text');
+
+    if (roleText) {
+        let roleIndex = 0;
+        roleText.textContent = roles[roleIndex];
+
+        setInterval(() => {
+            roleText.style.opacity = '0';
+            setTimeout(() => {
+                roleIndex = (roleIndex + 1) % roles.length;
+                roleText.textContent = roles[roleIndex];
+                roleText.style.opacity = '1';
+            }, 180);
+        }, 2500);
     }
 
-    /* --- 3. Scroll Animation (Fade In) --- */
-    const sections = document.querySelectorAll('.content-section');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
+    const revealTargets = document.querySelectorAll('.reveal, .content-section');
 
-    sections.forEach(section => observer.observe(section));
-
-    /* --- 4. Certificate Slider --- */
-    const slider = document.querySelector('.slider');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const slideCounter = document.querySelector('.slide-counter');
-
-    if (slider && prevBtn && nextBtn) {
-        const slides = slider.querySelectorAll('img');
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-
-        function updateSlider() {
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-            if (slideCounter) {
-                slideCounter.textContent = `${currentIndex + 1} / ${totalSlides}`;
-            }
-            
-            // Atur status tombol
-            prevBtn.style.opacity = currentIndex === 0 ? "0.5" : "1";
-            prevBtn.style.cursor = currentIndex === 0 ? "default" : "pointer";
-            
-            nextBtn.style.opacity = currentIndex === totalSlides - 1 ? "0.5" : "1";
-            nextBtn.style.cursor = currentIndex === totalSlides - 1 ? "default" : "pointer";
+    revealTargets.forEach((target) => {
+        const delay = target.dataset.delay;
+        if (delay) {
+            target.style.setProperty('--delay', `${delay}ms`);
         }
+    });
 
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < totalSlides - 1) {
-                currentIndex++;
-                updateSlider();
+    const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            });
+        },
+        {
+            threshold: 0.14,
+            rootMargin: '0px 0px -30px 0px'
+        }
+    );
+
+    revealTargets.forEach((target) => revealObserver.observe(target));
+
+    const sectionNodes = Array.from(document.querySelectorAll('main section[id]'));
+
+    const setActiveNav = () => {
+        const marker = window.scrollY + 160;
+        let activeId = sectionNodes[0]?.id || '';
+
+        sectionNodes.forEach((section) => {
+            if (marker >= section.offsetTop) {
+                activeId = section.id;
             }
         });
 
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateSlider();
-            }
+        navLinks.forEach((link) => {
+            const href = link.getAttribute('href') || '';
+            const isActive = href === `#${activeId}`;
+            link.classList.toggle('active', isActive);
         });
+    };
 
-        updateSlider(); // Init pertama kali
-    }
+    setActiveNav();
+    window.addEventListener('scroll', setActiveNav);
 
-    /* --- 5. Active Link Highlight on Scroll --- */
-    const links = document.querySelectorAll('.nav-links a');
-    
-    window.addEventListener('scroll', () => {
-        let current = '';
-        const sectionsList = document.querySelectorAll('section');
-        
-        sectionsList.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            // 100px offset untuk header
-            if (pageYOffset >= (sectionTop - 150)) {
-                current = section.getAttribute('id');
-            }
-        });
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card[data-category]');
 
-        links.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
+    filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const filter = button.dataset.filter;
+
+            filterButtons.forEach((btn) => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            projectCards.forEach((card) => {
+                const category = card.dataset.category || '';
+                const shouldHide = filter !== 'all' && category !== filter;
+                card.classList.toggle('is-hidden', shouldHide);
+            });
         });
     });
 
+    const sliderTrack = document.getElementById('certificateTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const counter = document.getElementById('slideCounter');
+
+    if (sliderTrack && prevBtn && nextBtn) {
+        const slides = Array.from(sliderTrack.querySelectorAll('img'));
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+        let autoplayId;
+
+        const renderSlider = () => {
+            sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+            if (counter) {
+                counter.textContent = `${currentIndex + 1} / ${totalSlides}`;
+            }
+        };
+
+        const goNext = () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            renderSlider();
+        };
+
+        const goPrev = () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            renderSlider();
+        };
+
+        const startAutoplay = () => {
+            if (totalSlides <= 1) return;
+            autoplayId = window.setInterval(goNext, 5200);
+        };
+
+        const stopAutoplay = () => {
+            window.clearInterval(autoplayId);
+        };
+
+        nextBtn.addEventListener('click', () => {
+            stopAutoplay();
+            goNext();
+            startAutoplay();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            stopAutoplay();
+            goPrev();
+            startAutoplay();
+        });
+
+        sliderTrack.addEventListener('mouseenter', stopAutoplay);
+        sliderTrack.addEventListener('mouseleave', startAutoplay);
+
+        renderSlider();
+        startAutoplay();
+    }
 });
+
+

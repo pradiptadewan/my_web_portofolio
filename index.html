@@ -1,17 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Pradipta Dewandaru</title>
-    
-    <meta name="description" content="Portofolio web profesional milik Pradipta Dewandaru. Fullstack Developer & UI/UX Enthusiast.">
-    
+    <meta name="description" content="Portofolio Muhammad Yoanan Pradipta Dewandaru, job seeker Fullstack Developer yang siap berkontribusi untuk tim pengembangan produk digital.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700;6..96,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWTKKBGTJV"></script>
@@ -23,193 +22,344 @@
     </script>
 </head>
 <body>
+    <div class="bg-decoration" aria-hidden="true">
+        <span class="orb orb-gold"></span>
+        <span class="orb orb-teal"></span>
+        <span class="grid-overlay"></span>
+    </div>
 
-    <header>
-        <nav>
-            <a href="#beranda" class="logo">Pradipta Dewandaru</a>
-            <ul class="nav-links">
+    <header class="site-header">
+        <nav class="container nav-wrap">
+            <a href="#beranda" class="brand">Pradipta Dewandaru</a>
+            <button class="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#tentang">Tentang</a></li>
-                <li><a href="#pengalaman">Pengalaman</a></li> 
+                <li><a href="#pengalaman">Pengalaman</a></li>
                 <li><a href="#keahlian">Keahlian</a></li>
                 <li><a href="#proyek">Proyek</a></li>
                 <li><a href="#sertifikat">Sertifikat</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
-            <div class="hamburger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
     </header>
 
     <main>
-        <section id="beranda" class="hero">
-            <div class="hero-content">
-                <h1>Halo, Saya Pradipta Dewandaru</h1>
-                <p>Saya seorang <span id="typed-text"></span></p>
-
-                <div class="hero-buttons">
-                    <a href="#proyek" class="btn">Lihat Karya Saya</a>
-                    <a href="img/cv.pdf" download="cv.pdf" class="btn btn-secondary">
-                        Download CV
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="tentang" class="content-section">
-            <div class="container">
-                <h2>Tentang Saya</h2>
-                <div class="about-content">
-                    <img src="img/pp-karikatur.png" alt="Foto Profil Pradipta" class="profile-pic">
-                    <p>
-                        Selamat datang di portofolio saya.
-                        <br><br>
-                        Nama saya Muhammad Yoanan Pradipta Dewandaru, seorang <strong>fresh graduate S1 Informatika</strong> dari Universitas Amikom Yogyakarta yang memiliki minat dan antusiasme dalam bidang pengembangan web.
-                        <br><br>
-                        Saya memiliki pengalaman dalam membangun dan mengembangkan aplikasi web menggunakan berbagai teknologi seperti Python (Django), Next.js, Golang, serta PHP (Laravel). Melalui pengalaman tersebut, saya terbiasa mengembangkan solusi digital yang efisien, responsif, dan berorientasi pada kebutuhan pengguna. Sebagai individu yang terus belajar dan berkembang, saya siap berkontribusi dalam pengembangan proyek teknologi yang inovatif.
+        <section id="beranda" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-main reveal">
+                    <p class="eyebrow">Job Seeker - Fullstack Developer</p>
+                    <h1>Siap Bergabung Sebagai Developer <span>Untuk Membangun Produk Digital Berdampak</span></h1>
+                    <p class="hero-lead">
+                        Saya Muhammad Yoanan Pradipta Dewandaru, fresh graduate S1 Informatika yang saat ini aktif mencari
+                        peluang kerja sebagai Fullstack Developer. Saya siap membantu perusahaan membangun aplikasi web yang cepat,
+                        stabil, dan nyaman digunakan.
                     </p>
-                </div>
-            </div>
-        </section>
 
-        <section id="pengalaman" class="content-section">
-            <div class="container">
-                <h2>Pengalaman Kerja</h2>
-                <div class="project-grid"> 
-                    <div class="project-card experience-highlight">
-                        <div class="exp-content">
-                            <h3>Fullstack Developer Intern</h3>
-                            <h4 class="company-name">PT Indi Teknokreasi</h4>
-                            <p class="date-range">Agustus 2025 - Desember 2025 (5 Bulan)</p>
-                            <p>Bertanggung jawab dalam pengembangan aplikasi skala enterprise (Pemerintahan & BUMN) secara end-to-end.</p>
-                            <ul class="exp-list">
-                                <li>Membangun Backend API berkinerja tinggi menggunakan <strong>Golang</strong>.</li>
-                                <li>Mengembangkan Frontend Dashboard interaktif dengan <strong>Next.js</strong>.</li>
-                                <li>Maintenance dan optimasi sistem CMS berbasis <strong>Django</strong>.</li>
-                            </ul>
-                        </div>
+                    <div class="role-rotator" aria-live="polite">
+                        <span class="label">Status karier</span>
+                        <span id="role-text">Aktif Mencari Posisi Fullstack Developer</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#proyek" class="btn btn-primary">Tinjau Portofolio Saya</a>
+                        <a href="img/cv.pdf" download="cv.pdf" class="btn btn-outline">Unduh CV</a>
+                    </div>
+                    <div class="stat-grid">
+                        <article class="stat-card">
+                            <p class="stat-value">10+</p>
+                            <p class="stat-label">Proyek Web Aktif</p>
+                        </article>
+                        <article class="stat-card">
+                            <p class="stat-value">3</p>
+                            <p class="stat-label">Stack Utama: Django, Next.js, Laravel</p>
+                        </article>
+                        <article class="stat-card">
+                            <p class="stat-value">8 Bulan</p>
+                            <p class="stat-label">Pengalaman Relevan untuk Dunia Kerja</p>
+                        </article>
                     </div>
                 </div>
+
+                <aside class="hero-side reveal" data-delay="120">
+                    <div class="portrait-wrap">
+                        <img src="img/poto-sidang.png" alt="Foto profil Pradipta Dewandaru" onerror="this.src='img/pp-karikatur.png'">
+                    </div>
+                    <div class="side-content">
+                        <p class="status-pill"><i class="fa-solid fa-circle"></i> Actively seeking opportunities</p>
+                        <h2>Terbuka untuk posisi Fullstack, Frontend, atau Backend Developer.</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Siap bergabung untuk kebutuhan full-time entry level.</li>
+                            <li><i class="fa-solid fa-check"></i> Terbiasa kerja end-to-end dari UI hingga API.</li>
+                            <li><i class="fa-solid fa-check"></i> Adaptif, cepat belajar, dan siap bekerja dalam tim.</li>
+                        </ul>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="mailto:pradiptadwn13@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/6285559486090" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/yoanan-pradipta-dewandaru-760044311" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/pradiptadewan" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </aside>
             </div>
         </section>
 
-        <section id="keahlian" class="content-section">
+        <section id="tentang" class="section content-section">
             <div class="container">
-                <h2>Keahlian Saya</h2>
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Tentang</p>
+                    <h2>Alasan saya siap direkrut untuk tim pengembangan Anda.</h2>
+                </div>
+
+                <div class="about-grid">
+                    <article class="glass-card reveal" data-delay="40">
+                        <h3>Profil Profesional</h3>
+                        <p>
+                            Saya adalah job seeker dengan fokus karier di bidang Fullstack Development. Saya memiliki pengalaman
+                            mengerjakan pengembangan web end-to-end, mulai dari perancangan antarmuka hingga implementasi backend,
+                            termasuk proyek pemerintahan dan BUMN yang menuntut stabilitas dan performa.
+                        </p>
+                        <p>
+                            Saya siap berkontribusi sebagai anggota tim yang proaktif, disiplin, dan terbuka menerima feedback.
+                            Tujuan saya adalah memberi dampak nyata melalui produk yang rapi secara teknis dan bermanfaat untuk bisnis.
+                        </p>
+                    </article>
+
+                    <article class="glass-card reveal" data-delay="120">
+                        <h3>Nilai Yang Saya Bawa Ke Tim</h3>
+                        <ul class="check-list">
+                            <li><i class="fa-solid fa-star"></i> Komunikatif dan nyaman berkolaborasi lintas tim.</li>
+                            <li><i class="fa-solid fa-star"></i> Kode terstruktur agar mudah dikembangkan dan dirawat.</li>
+                            <li><i class="fa-solid fa-star"></i> Terbiasa bekerja dengan target dan timeline yang jelas.</li>
+                            <li><i class="fa-solid fa-star"></i> Semangat belajar tinggi untuk adaptasi kebutuhan perusahaan.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="pengalaman" class="section content-section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Pengalaman</p>
+                    <h2>Pengalaman relevan yang siap saya bawa ke perusahaan Anda.</h2>
+                </div>
+
+                <div class="experience-timeline reveal" data-delay="60">
+                    <span class="line" aria-hidden="true"></span>
+                    <article class="timeline-card">
+                        <p class="timeline-date">Agustus 2025 - Desember 2025</p>
+                        <h3>Fullstack Developer Intern</h3>
+                        <p class="company-name">PT Indi Teknokreasi</p>
+                        <p>
+                            Pengalaman ini membentuk kemampuan teknis dan profesional saya untuk langsung berkontribusi di lingkungan
+                            kerja nyata, termasuk pengembangan dashboard, API, dan maintenance sistem produksi.
+                        </p>
+                        <ul class="timeline-list">
+                            <li>Membangun API berkinerja tinggi menggunakan Golang.</li>
+                            <li>Mengembangkan dashboard interaktif menggunakan Next.js.</li>
+                            <li>Melakukan optimasi dan maintenance CMS berbasis Django.</li>
+                        </ul>
+                        <div class="chip-row">
+                            <span class="chip">Golang</span>
+                            <span class="chip">Next.js</span>
+                            <span class="chip">Django</span>
+                            <span class="chip">Enterprise Workflow</span>
+                        </div>
+                    </article>
+
+                    <article class="timeline-card">
+                        <p class="timeline-date">Freelance Project - PT Indi Teknokreasi</p>
+                        <h3>Freelance Web Developer</h3>
+                        <p class="company-name">PT Indi Teknokreasi</p>
+                        <p>
+                            Menangani dua proyek freelance: (1) Finishing web ITB Sains Kebumian menggunakan React dan Django,
+                            termasuk perbaikan bug sesuai UAT dan implementasi elemen visual 3D dengan Three.js; (2) Pengembangan
+                            Gamifikasi MyPertamina Edisi Ramadhan menggunakan Next.js.
+                        </p>
+                        <ul class="timeline-list">
+                            <li>Project ITB: finishing fitur utama web berbasis React dan Django.</li>
+                            <li>Project ITB: memperbaiki bug berdasarkan hasil UAT dan menambahkan komponen 3D dengan Three.js.</li>
+                            <li>Project MyPertamina Ramadhan: merombak tampilan halaman awal game dan integrasi leaderboard.</li>
+                            <li>Project MyPertamina Ramadhan: implementasi pembatasan waktu bermain.</li>
+                        </ul>
+                        <div class="chip-row">
+                            <span class="chip">React</span>
+                            <span class="chip">Django</span>
+                            <span class="chip">Three.js</span>
+                            <span class="chip">Next.js</span>
+                            <span class="chip">UAT Bug Fixing</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="keahlian" class="section content-section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Keahlian</p>
+                    <h2>Keahlian teknis yang siap saya gunakan untuk kebutuhan bisnis.</h2>
+                </div>
+
                 <div class="skills-grid">
-
-                    <div class="skill-category">
-                        <h4>Bahasa & Database</h4>
+                    <article class="skill-card reveal" data-delay="20">
+                        <h3>Bahasa & Database</h3>
                         <div class="skills-list">
-                            <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
-                            <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-                            <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
-                            <div class="skill-item"><i class="fab fa-php"></i><span>PHP</span></div>
-                            <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
-                            <div class="skill-item"><i class="fa-brands fa-golang"></i><span>Go (Golang)</span></div> 
-                            <div class="skill-item"><i class="fas fa-database"></i><span>SQL</span></div>
+                            <span class="skill-item"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="skill-item"><i class="fab fa-php"></i> PHP</span>
+                            <span class="skill-item"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-item"><i class="fa-brands fa-golang"></i> Golang</span>
+                            <span class="skill-item"><i class="fas fa-database"></i> SQL</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="skill-category">
-                        <h4>Framework & Library</h4>
+                    <article class="skill-card reveal" data-delay="100">
+                        <h3>Framework & Library</h3>
                         <div class="skills-list">
-                            <div class="skill-item"><i class="fab fa-laravel"></i><span>Laravel</span></div>
-                            <div class="skill-item"><i class="fab fa-react"></i><span>Next.js / React</span></div> 
-                            <div class="skill-item"><i class="fab fa-python"></i><span>Django</span></div>
+                            <span class="skill-item"><i class="fab fa-laravel"></i> Laravel</span>
+                            <span class="skill-item"><i class="fab fa-react"></i> Next.js / React</span>
+                            <span class="skill-item"><i class="fab fa-python"></i> Django</span>
+                            <span class="skill-item"><i class="devicon-astro-plain"></i> Astro</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="skill-category">
-                        <h4>Tools & Platform</h4>
+                    <article class="skill-card reveal" data-delay="180">
+                        <h3>Tools & Platform</h3>
                         <div class="skills-list">
-                            <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
-                            <div class="skill-item"><i class="fab fa-github"></i><span>GitHub</span></div>
-                            <div class="skill-item"><i class="fab fa-figma"></i><span>Figma</span></div>
-                            <div class="skill-item"><i class="devicon-postman-plain"></i><span>Postman</span></div>
+                            <span class="skill-item"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="skill-item"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="skill-item"><i class="fab fa-figma"></i> Figma</span>
+                            <span class="skill-item"><i class="devicon-postman-plain"></i> Postman</span>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="proyek" class="content-section">
+        <section id="proyek" class="section content-section">
             <div class="container">
-                <h2>Proyek Unggulan</h2>
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Proyek</p>
+                    <h2>Bukti kerja nyata yang merepresentasikan kemampuan saya.</h2>
+                </div>
 
-                <h3 class="project-category-title">Professional Projects (Internship)</h3>
+                <div class="project-filter reveal" data-delay="20">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="intern">Intern</button>
+                    <button class="filter-btn" data-filter="freelance">Freelance</button>
+                    <button class="filter-btn" data-filter="personal">Personal</button>
+                    <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                </div>
+
                 <div class="project-grid">
-                    
-                    <div class="project-card">
-                        <div class="img-wrapper">
-                            <img src="img/NDA.jpg" alt="Gamification Dashboard" onerror="this.src='https://via.placeholder.com/400x200?text=Protected+by+NDA'">
-                            <div class="nda-badge"><i class="fas fa-lock"></i> NDA Protected</div>
+                    <article class="project-card reveal" data-category="intern">
+                        <div class="project-media">
+                            <img src="img/mypertamina-intern.png" alt="Gamifikasi MyPertamina (Internship)" onerror="this.src='img/NDA.jpg'">
+                            <span class="project-badge">Intern - NDA</span>
                         </div>
-                        <div class="card-body">
-                            <h3>Gamification Dashboard BUMN</h3>
-                            <p>Dashboard untuk memonitor leaderboard dan skor pengguna aplikasi mobile BUMN. Fitur real-time update & reward management.</p>
+                        <div class="project-body">
+                            <h3>Gamifikasi MyPertamina (Internship)</h3>
+                            <p>Kontribusi saat intern pada pengembangan gamifikasi MyPertamina, termasuk peningkatan tampilan UI game, integrasi leaderboard, dan optimasi alur interaksi pengguna.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-react" title="Next.js"></i>
-                                <i class="fab fa-js" title="TypeScript"></i>
+                                <i class="fa-solid fa-trophy" title="Leaderboard"></i>
+                                <i class="fa-solid fa-gamepad" title="Gamification"></i>
                             </div>
                             <div class="project-links">
-                                <span class="private-repo"><i class="fas fa-lock"></i> Private Repository</span>
+                                <span class="private-link"><i class="fa-solid fa-lock"></i> Private Repository</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="img-wrapper">
-                            <img src="img/NDA.jpg" alt="Sistem SDM" onerror="this.src='https://via.placeholder.com/400x200?text=Protected+by+NDA'">
-                            <div class="nda-badge"><i class="fas fa-lock"></i> NDA Protected</div>
+                    <article class="project-card reveal" data-category="intern">
+                        <div class="project-media">
+                            <img src="img/NDA.jpg" alt="Sistem Manajemen SDM" onerror="this.src='https://via.placeholder.com/1200x675?text=NDA+Protected'">
+                            <span class="project-badge">Intern - NDA</span>
                         </div>
-                        <div class="card-body">
+                        <div class="project-body">
                             <h3>Sistem Manajemen SDM</h3>
-                            <p>Pengembangan Backend API untuk fitur penilaian mandiri pegawai pemerintahan menggunakan Golang untuk performa tinggi.</p>
+                            <p>Pengembangan backend API fitur penilaian mandiri pegawai pemerintahan menggunakan Golang.</p>
                             <div class="project-tech-stack">
                                 <i class="fa-brands fa-golang" title="Golang"></i>
                                 <i class="fas fa-database" title="PostgreSQL"></i>
-                                <i class="devicon-astro-plain" title="Astro JS"></i>
+                                <i class="devicon-astro-plain" title="Astro"></i>
                             </div>
                             <div class="project-links">
-                                <span class="private-repo"><i class="fas fa-lock"></i> Private Repository</span>
+                                <span class="private-link"><i class="fa-solid fa-lock"></i> Private Repository</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="img-wrapper">
-                            <img src="img/NDA.jpg" alt="CMS Komoditas" onerror="this.src='https://via.placeholder.com/400x200?text=Protected+by+NDA'">
-                            <div class="nda-badge"><i class="fas fa-lock"></i> NDA Protected</div>
+                    <article class="project-card reveal" data-category="intern">
+                        <div class="project-media">
+                            <img src="img/NDA.jpg" alt="CMS Komoditas Daerah" onerror="this.src='https://via.placeholder.com/1200x675?text=NDA+Protected'">
+                            <span class="project-badge">Intern - NDA</span>
                         </div>
-                        <div class="card-body">
+                        <div class="project-body">
                             <h3>CMS Komoditas Daerah</h3>
-                            <p>Refactoring dan pengembangan fitur baru pada Content Management System untuk data komoditas pangan.</p>
+                            <p>Refactor dan pengembangan fitur pada CMS komoditas pangan untuk kebutuhan operasional daerah.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-python" title="Django"></i>
                             </div>
                             <div class="project-links">
-                                <span class="private-repo"><i class="fas fa-lock"></i> Private Repository</span>
+                                <span class="private-link"><i class="fa-solid fa-lock"></i> Private Repository</span>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <h3 class="project-category-title">Pengembangan Web (Personal)</h3>
-                <div class="project-grid">
+                    <article class="project-card reveal" data-category="freelance">
+                        <div class="project-media">
+                            <img src="img/mypertamina-ramadhan.png" alt="Gamifikasi MyPertamina Edisi Ramadhan (Freelance)" onerror="this.src='img/NDA.jpg'">
+                            <span class="project-badge">Freelance - NDA</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Gamifikasi MyPertamina Edisi Ramadhan (Freelance)</h3>
+                            <p>Project freelance: merombak tampilan halaman awal game, integrasi leaderboard, serta implementasi pembatasan waktu bermain menggunakan Next.js.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-react" title="Next.js"></i>
+                                <i class="fa-solid fa-trophy" title="Leaderboard"></i>
+                                <i class="fa-solid fa-clock" title="Time Limit"></i>
+                            </div>
+                            <div class="project-links">
+                                <span class="private-link"><i class="fa-solid fa-lock"></i> Source code dirahasiakan (NDA)</span>
+                            </div>
+                        </div>
+                    </article>
 
-                    <div class="project-card">
-                        <img src="img/porto-joglo.png" alt="Website Pemesanan Wisata Borobudur">
-                        <div class="card-body">
-                            <h3>Website Pemesanan Homestay, Resto, dan VW Tour Borobudur</h3>
-                            <p>
-                                Mengembangkan website pemesanan terintegrasi yang menyediakan layanan booking homestay, reservasi restoran, 
-                                serta paket wisata VW Tour Borobudur dengan tampilan modern, responsif, dan mudah digunakan.
-                            </p>
+                    <article class="project-card reveal" data-category="freelance">
+                        <div class="project-media">
+                            <img src="img/itb.png" alt="Web ITB Sains Kebumian (Freelance)" onerror="this.src='img/NDA.jpg'">
+                            <span class="project-badge">Freelance - NDA</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Web ITB Sains Kebumian (Freelance)</h3>
+                            <p>Finishing pengembangan web menggunakan React dan Django, perbaikan bug berdasarkan UAT, serta implementasi elemen 3D dengan Three.js.</p>
+                            <div class="project-tech-stack">
+                                <i class="fab fa-react" title="React"></i>
+                                <i class="fab fa-python" title="Django"></i>
+                                <i class="fa-solid fa-cube" title="Three.js"></i>
+                            </div>
+                            <div class="project-links">
+                                <span class="private-link"><i class="fa-solid fa-image"></i> Hanya menampilkan screenshot proyek</span>
+                                <span class="private-link"><i class="fa-solid fa-lock"></i> Source code dirahasiakan (NDA)</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="personal">
+                        <div class="project-media">
+                            <img src="img/porto-joglo.png" alt="Website Pemesanan Homestay Borobudur">
+                            <span class="project-badge">Personal</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Platform Booking Wisata Borobudur</h3>
+                            <p>Website pemesanan terintegrasi untuk homestay, restoran, dan paket VW Tour Borobudur.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-html5" title="HTML"></i>
                                 <i class="devicon-tailwindcss-plain" title="Tailwind CSS"></i>
@@ -217,64 +367,57 @@
                                 <i class="fab fa-python" title="Django"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://joglodhepis.vercel.app/" target="_blank">
-                                    Live Demo <i class="fas fa-globe"></i>
-                                </a>
-                                <a href="https://github.com/pradiptadewan/joglodhepis" target="_blank">
-                                    Kode <i class="fab fa-github"></i>
-                                </a>
+                                <a href="https://joglodhepis.vercel.app/" target="_blank" rel="noopener">Live Demo <i class="fas fa-globe"></i></a>
+                                <a href="https://github.com/pradiptadewan/joglodhepis" target="_blank" rel="noopener">Kode <i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="img/porto-vw.png" alt="Website Wisata Borobudur">
-                        <div class="card-body">
+                    </article>
+                    <article class="project-card reveal" data-category="personal">
+                        <div class="project-media">
+                            <img src="img/porto-vw.png" alt="Website Wisata Borobudur & Adventure Tour">
+                            <span class="project-badge">Personal</span>
+                        </div>
+                        <div class="project-body">
                             <h3>Website Wisata Borobudur & Adventure Tour</h3>
-                            <p>
-                                Mengembangkan website wisata Borobudur yang menampilkan layanan penyewaan VW Safari, Jeep Tour, 
-                                Rafting Sungai, dan ATV Adventure dengan tampilan modern, responsif, serta optimal untuk berbagai perangkat.
-                            </p>
+                            <p>Portal wisata untuk layanan VW Safari, Jeep Tour, Rafting Sungai, dan ATV Adventure.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-html5" title="HTML"></i>
                                 <i class="devicon-tailwindcss-plain" title="Tailwind CSS"></i>
                                 <i class="fab fa-react" title="Next.js"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://exploreborobudur.id" target="_blank">
-                                    Live Demo <i class="fas fa-globe"></i>
-                                </a>
-                                <a href="https://github.com/pradiptadewan/explore-borobudur" target="_blank">
-                                    Kode <i class="fab fa-github"></i>
-                                </a>
+                                <a href="https://exploreborobudur.id" target="_blank" rel="noopener">Live Demo <i class="fas fa-globe"></i></a>
+                                <a href="https://github.com/pradiptadewan/explore-borobudur" target="_blank" rel="noopener">Kode <i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <img src="img/pph.jpg" alt="Website Pemesanan Wisata Borobudur">
-                        <div class="card-body">
+                    <article class="project-card reveal" data-category="personal">
+                        <div class="project-media">
+                            <img src="img/pph.jpg" alt="Website Pelatihan PPH">
+                            <span class="project-badge">Personal</span>
+                        </div>
+                        <div class="project-body">
                             <h3>Website Pelatihan PPH</h3>
-                            <p>
-                                Berkontribusi dalam perbaikan dan pengembangan fitur pada website pelatihan PPh serta membantu proses deployment aplikasi dengan memanfaatkan Laravel sebagai backend framework, Blade untuk templating, Filament untuk pengelolaan panel admin, dan Tailwind CSS untuk antarmuka yang responsif.
-                            </p>
+                            <p>Kontribusi pengembangan fitur dan deployment aplikasi Laravel, Blade, Filament, dan Tailwind CSS.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-laravel" title="Laravel"></i>
                                 <i class="devicon-tailwindcss-plain" title="Tailwind CSS"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/yusrinaa93/pelatihan-" target="_blank">
-                                    Kode <i class="fab fa-github"></i>
-                                </a>
+                                <a href="https://github.com/yusrinaa93/pelatihan-" target="_blank" rel="noopener">Kode <i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <img src="img/web1.png" alt="Website Rekomendasi Buku">
-                        <div class="card-body">
+                    <article class="project-card reveal" data-category="personal">
+                        <div class="project-media">
+                            <img src="img/web1.png" alt="Website Rekomendasi Buku">
+                            <span class="project-badge">Personal</span>
+                        </div>
+                        <div class="project-body">
                             <h3>Website Rekomendasi Buku</h3>
-                            <p>Membangun website tentang sistem rekomendasi buku yang modern dan responsif menggunakan HTML, CSS, JavaScript dan Django.</p>
+                            <p>Sistem rekomendasi buku responsif dengan fitur detail buku, rating, dan ulasan.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-html5" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" title="CSS3"></i>
@@ -282,16 +425,19 @@
                                 <i class="fab fa-python" title="Python"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/pradiptadewan/rekomendasi_buku" target="_blank">Kode <i class="fab fa-github"></i></a>
+                                <a href="https://github.com/pradiptadewan/rekomendasi_buku" target="_blank" rel="noopener">Kode <i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <img src="img/web2.png" alt="Website Pemesanan Homestay">
-                        <div class="card-body">
+                    <article class="project-card reveal" data-category="personal">
+                        <div class="project-media">
+                            <img src="img/web2.png" alt="Website Pemesanan Homestay">
+                            <span class="project-badge">Personal</span>
+                        </div>
+                        <div class="project-body">
                             <h3>Website Pemesanan Homestay</h3>
-                            <p>Website ini merupakan sistem pemesanan homestay dan juga pendaftaran homestay milik user.</p>
+                            <p>Platform pemesanan dan pendaftaran homestay berbasis web dengan alur pengguna yang sederhana.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-html5" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" title="CSS3"></i>
@@ -299,16 +445,18 @@
                                 <i class="fab fa-python" title="Python"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/pradiptadewan/fp_django_softuni" target="_blank">Kode <i class="fab fa-github"></i></a>
+                                <a href="https://github.com/pradiptadewan/fp_django_softuni" target="_blank" rel="noopener">Kode <i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="img/web3.png" alt="Website Homestay Joglo">
-                        <div class="card-body">
+                    </article>
+                    <article class="project-card reveal" data-category="personal">
+                        <div class="project-media">
+                            <img src="img/web3.png" alt="Website Homestay Pribadi">
+                            <span class="project-badge">Personal</span>
+                        </div>
+                        <div class="project-body">
                             <h3>Website Homestay Pribadi</h3>
-                            <p>Membuat website homestay pribadi yang menampilkan detail kamar dan fasilitas.</p>
+                            <p>Website informasi homestay pribadi yang menampilkan detail kamar dan fasilitas utama.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-html5" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" title="CSS3"></i>
@@ -316,72 +464,76 @@
                                 <i class="fab fa-python" title="Python"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/pradiptadewan/portofolio-joglo" target="_blank">Kode <i class="fab fa-github"></i></a>
+                                <a href="https://github.com/pradiptadewan/portofolio-joglo" target="_blank" rel="noopener">Kode <i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-
-
-                </div>
-
-                <h3 class="project-category-title">Desain UI/UX</h3>
-                <div class="project-grid">
-
-                    <div class="project-card">
-                        <img src="img/ui1.png" alt="Aplikasi Barter UI">
-                        <div class="card-body">
+                    <article class="project-card reveal" data-category="uiux">
+                        <div class="project-media">
+                            <img src="img/ui1.png" alt="Desain Aplikasi Barter">
+                            <span class="project-badge">UI/UX</span>
+                        </div>
+                        <div class="project-body">
                             <h3>Desain Aplikasi Barter</h3>
-                            <p>Merancang alur pengguna dan antarmuka untuk aplikasi mobile transaksi barter.</p>
+                            <p>Perancangan user flow dan antarmuka aplikasi mobile untuk skenario transaksi barter.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-figma" title="Figma"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://www.figma.com/design/sRXfqb20SlOYZmPArnbHOU/Aplikasi-Barter?node-id=0-1&t=GIjrdByqR00MCKx3-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                                <a href="https://www.figma.com/design/sRXfqb20SlOYZmPArnbHOU/Aplikasi-Barter?node-id=0-1&t=GIjrdByqR00MCKx3-1" target="_blank" rel="noopener">Lihat Figma <i class="fab fa-figma"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <img src="img/ui3.png" alt="Rekomendasi Buku UI">
-                        <div class="card-body">
+                    <article class="project-card reveal" data-category="uiux">
+                        <div class="project-media">
+                            <img src="img/ui3.png" alt="Desain Web Rekomendasi Buku">
+                            <span class="project-badge">UI/UX</span>
+                        </div>
+                        <div class="project-body">
                             <h3>Desain Web Rekomendasi Buku</h3>
-                            <p>Desain sistem rekomendasi buku menampilkan detail buku, rating, dan ulasan.</p>
+                            <p>Eksplorasi visual sistem rekomendasi buku dengan fokus informasi, rating, dan ulasan pengguna.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-figma" title="Figma"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://www.figma.com/design/NTcSG6Ro4af2u5Hcar352y/SISTEM_REKOMENDASI_BUKU?node-id=0-1&t=CCEnpPSB5nviABqP-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                                <a href="https://www.figma.com/design/NTcSG6Ro4af2u5Hcar352y/SISTEM_REKOMENDASI_BUKU?node-id=0-1&t=CCEnpPSB5nviABqP-1" target="_blank" rel="noopener">Lihat Figma <i class="fab fa-figma"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <img src="img/ui2.png" alt="Website Iklan UI">
-                        <div class="card-body">
+                    <article class="project-card reveal" data-category="uiux">
+                        <div class="project-media">
+                            <img src="img/ui2.png" alt="Desain Website Iklan">
+                            <span class="project-badge">UI/UX</span>
+                        </div>
+                        <div class="project-body">
                             <h3>Desain Website Iklan</h3>
-                            <p>Membuat desain website marketplace jasa iklan untuk konten kreator dan brand.</p>
+                            <p>Desain marketplace jasa iklan yang mempertemukan brand dan konten kreator secara terstruktur.</p>
                             <div class="project-tech-stack">
                                 <i class="fab fa-figma" title="Figma"></i>
                             </div>
                             <div class="project-links">
-                                <a href="https://www.figma.com/design/MD08iO4ygwdHKr5IzYpBdb/UTS-DIGITAL-BUSINES?node-id=0-1&t=00KJDmDcJjvgkLoq-1" target="_blank">Lihat di Figma <i class="fab fa-figma"></i></a>
+                                <a href="https://www.figma.com/design/MD08iO4ygwdHKr5IzYpBdb/UTS-DIGITAL-BUSINES?node-id=0-1&t=00KJDmDcJjvgkLoq-1" target="_blank" rel="noopener">Lihat Figma <i class="fab fa-figma"></i></a>
                             </div>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
             </div>
         </section>
-
-        <section id="sertifikat" class="content-section">
+        <section id="sertifikat" class="section content-section">
             <div class="container">
-                <h2>Sertifikat & Lisensi</h2>
-                
-                <h3 class="sertifikat-subjudul">Sertifikat Studi Independent</h3>
-                <div class="certificate-slider-container">
-                    <div class="slider-wrapper">
-                        <div class="slider">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Sertifikat</p>
+                    <h2>Rekam jejak pembelajaran dan pencapaian profesional.</h2>
+                </div>
+
+                <h3 class="sub-title reveal">Studi Independent</h3>
+                <div class="certificate-slider reveal" data-delay="40">
+                    <button class="slider-btn" id="prevBtn" aria-label="Sertifikat sebelumnya"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-viewport">
+                        <div class="slider-track" id="certificateTrack">
                             <img src="img/11.png" alt="Sertifikat 1">
                             <img src="img/2.png" alt="Sertifikat 2">
                             <img src="img/3.png" alt="Sertifikat 3">
@@ -395,74 +547,76 @@
                             <img src="img/1.png" alt="Sertifikat 11">
                         </div>
                     </div>
-                    <div class="slide-counter"></div>
-                    <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                    <button class="slider-btn" id="nextBtn" aria-label="Sertifikat berikutnya"><i class="fas fa-chevron-right"></i></button>
+                    <div class="slide-counter" id="slideCounter">1 / 11</div>
                 </div>
 
-                <h3 class="sertifikat-subjudul">Sertifikat Lainnya</h3>
+                <h3 class="sub-title reveal">Sertifikat Lainnya</h3>
                 <div class="certificate-grid">
-                    <div class="certificate-card">
-                        <img src="img/sertif.png" alt="Sertifikat Magang">
-                        <div class="certificate-content">
+                    <article class="certificate-card reveal" data-delay="20">
+                        <img src="img/sertif.png" alt="Sertifikat Magang Berdampak">
+                        <div>
                             <h4>Magang Berdampak</h4>
-                            <p>Diterbitkan oleh: PT Indi Teknokreasi</p>
+                            <p>PT Indi Teknokreasi</p>
                         </div>
-                    </div>
-
-                    <div class="certificate-card">
+                    </article>
+                    <article class="certificate-card reveal" data-delay="80">
                         <img src="img/serMsib.png" alt="Sertifikat MSIB">
-                        <div class="certificate-content">
+                        <div>
                             <h4>Sertifikat MSIB</h4>
-                            <p>Diterbitkan oleh: Kampus Merdeka</p>
+                            <p>Kampus Merdeka</p>
                         </div>
-                    </div>
-
-                    <div class="certificate-card">
-                        <img src="img/serSoft.png" alt="Sertifikat SoftUni">
-                        <div class="certificate-content">
-                            <h4>Sertifikat Software University</h4>
-                            <p>Diterbitkan oleh: SoftUni Indonesia</p>
+                    </article>
+                    <article class="certificate-card reveal" data-delay="140">
+                        <img src="img/serSoft.png" alt="Sertifikat Software University">
+                        <div>
+                            <h4>Software University</h4>
+                            <p>SoftUni Indonesia</p>
                         </div>
-                    </div>
-
-                    <div class="certificate-card">
+                    </article>
+                    <article class="certificate-card reveal" data-delay="200">
                         <img src="img/serDic.png" alt="Sertifikat Dicoding">
-                        <div class="certificate-content">
-                            <h4>Dasar Pemograman Web</h4>
-                            <p>Diterbitkan oleh: Dicoding</p>
+                        <div>
+                            <h4>Dasar Pemrograman Web</h4>
+                            <p>Dicoding</p>
                         </div>
-                    </div>
-
-                    <div class="certificate-card">
+                    </article>
+                    <article class="certificate-card reveal" data-delay="260">
                         <img src="img/serKick.png" alt="Sertifikat Rakamin">
-                        <div class="certificate-content">
+                        <div>
                             <h4>Basic Fullstack Web Dev</h4>
-                            <p>Diterbitkan oleh: Rakamin Academy</p>
+                            <p>Rakamin Academy</p>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="kontak" class="content-section">
+        <section id="kontak" class="section content-section">
             <div class="container">
-                <h2>Kontak</h2>
-                <div class="contact-info">
-                    <a href="mailto:pradiptadwn13@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> pradiptadwn13@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/yoanan-pradipta-dewandaru-760044311" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/pradiptadewan" target="_blank" class="contact-item"><i class="fab fa-github"></i> GitHub</a>
+                <div class="contact-panel reveal">
+                    <p class="section-kicker">Kontak</p>
+                    <h2>Saya siap mengikuti proses rekrutmen dan interview.</h2>
+                    <p>
+                        Jika perusahaan Anda sedang membuka posisi Fullstack, Frontend, atau Backend Developer, saya sangat terbuka
+                        untuk berdiskusi lebih lanjut. Saya siap bekerja, belajar cepat, dan bertumbuh bersama tim Anda.
+                    </p>
+
+                    <div class="contact-list">
+                        <a href="mailto:pradiptadwn13@gmail.com"><i class="fas fa-envelope"></i> Email: pradiptadwn13@gmail.com</a>
+                        <a href="https://wa.me/6285559486090" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp: 085559486090</a>
+                        <a href="https://www.linkedin.com/in/yoanan-pradipta-dewandaru-760044311" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn: Yoanan Pradipta Dewandaru</a>
+                        <a href="https://github.com/pradiptadewan" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub: pradiptadewan</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Muhammad Yoanan Pradipta Dewandaru</p>
+        <p>&copy; 2026 Muhammad Yoanan Pradipta Dewandaru. Open to full-time opportunities.</p>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
