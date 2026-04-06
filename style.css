@@ -40,59 +40,6 @@ body {
         linear-gradient(165deg, var(--bg-950), var(--bg-900) 40%, #0d1626 100%);
     line-height: 1.6;
     overflow-x: hidden;
-    min-height: 100vh;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    color: inherit;
-}
-
-.bg-decoration {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(70px);
-    opacity: 0.55;
-}
-
-.orb-gold {
-    width: 360px;
-    height: 360px;
-    top: -80px;
-    left: -80px;
-    background: rgba(215, 180, 109, 0.55);
-    animation: floatOrb 9s ease-in-out infinite;
-}
-
-.orb-teal {
-    width: 320px;
-    height: 320px;
-    right: -110px;
-    top: 16%;
-    background: rgba(86, 215, 200, 0.45);
-    animation: floatOrb 11s ease-in-out infinite reverse;
-}
-
-.grid-overlay {
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-    background-size: 46px 46px;
-    mask-image: radial-gradient(circle at center, black, transparent 76%);
 }
 
 .container {
@@ -1121,5 +1068,3 @@ footer {
         border-radius: 20px;
     }
 }
-
-
